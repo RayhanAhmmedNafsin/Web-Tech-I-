@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Login </title>
+</head>
+<body>
+
+  <table width="100%">
+    <tr>
+      <td align="left">
+        <img src="image/emp.jpg" alt="Employee Management System" width="80">
+      </td>
+      <td align="right">
+        <a href="Index.html">Home</a> |
+        <a href="registration/admin.html">Register</a>
+      </td>
+    </tr>
+  </table>
+
+  <br><br>
+
+  <h1>Login</h1>
+
+  <form action="login-process" method="post">
+    <p>
+      <label for="role">Login As:</label>
+      <select id="role" name="role" required>
+        <option value="">-- Select Role --</option>
+        <option value="admin">Admin</option>
+        <option value="manager">Manager</option>
+        <option value="accountant">Accountant</option>
+        <option value="employee">Employee</option>
+      </select>
+    </p>
+
+    <p>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </p>
+
+    <p>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+    </p>
+
+    <p>
+      <input type="submit" value="Login">
+      <input type="button" value="Register" onclick="location.href='registration/admin.html'">
+    </p>
+  </form>
+
+</body>
+</html>

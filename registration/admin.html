@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Registration - Employee Management System</title>
+</head>
+<body>
+
+  <table width="100%">
+    <tr>
+      <td align="left">
+        <img src="../image/emp.jpg" alt="Employee Management System" width="90">
+      </td>
+      <td align="right">
+        <a href="../Index.html">Home</a> |
+        <a href="../login.html">Login</a> 
+        
+      </td>
+    </tr>
+  </table>
+
+  <br><br>
+
+  <h1>Admin Registration</h1>
+
+  <form action="admin-register-process" method="post">
+    <p>
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required>
+    </p>
+
+    <p>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </p>
+
+    <p>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+    </p>
+
+    <p>
+      <label for="confirm">Confirm Password:</label>
+      <input type="password" id="confirm" name="confirm" required>
+    </p>
+
+    <p>
+      <label for="empid">Employee ID:</label>
+      <input type="text" id="empid" name="empid" required>
+    </p>
+
+    <p>
+      <label for="access">Access Level:</label>
+      <select id="access" name="access">
+        <option value="super_admin">Super Admin</option>
+        <option value="admin">Admin</option>
+      </select>
+    </p>
+
+    <p>
+      <input type="submit" value="Register">
+      <input type="button" value="Back" onclick="location.href='../Index.html'">
+    </p>
+  </form>
+
+</body>
+</html>
